@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Attach
+  - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
