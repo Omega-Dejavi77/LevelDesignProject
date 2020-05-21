@@ -9,27 +9,23 @@ public class Piston : MonoBehaviour
     [SerializeField] private Transform initialPoint;
     [SerializeField] private float speedFactor;
     private float _direction = -1f;
-    [SerializeField] private Transform point;
+    [SerializeField] private Transform collisionPoint;
 
     private void Update()
     {
-        var distance = Mathf.Abs(point.position.y - initialPoint.position.y);
+        var distance = Mathf.Abs(collisionPoint.position.y - initialPoint.position.y);
         if (distance < 0.1f)
             _direction *= -1;
     }
 
     void FixedUpdate()
     {
-        var hit = Physics2D.Raycast(point.position, Vector2.down, 200f);
-        print(hit.collider.name);
+        var hit = Physics2D.Raycast(collisionPoint.position, Vector2.down, 200f);
         if (hit.collider.CompareTag("Ground"))
         {
-            var distance = Mathf.Abs(hit.point.y - point.position.y);
+            var distance = Mathf.Abs(hit.point.y - collisionPoint.position.y);
             if (distance < 0.1f)
-            {
                 _direction *= -1;
-                print("pene");
-            }
         }
         transform.position += new Vector3(0 , _direction, 0) * (Time.deltaTime * speedFactor);
     }

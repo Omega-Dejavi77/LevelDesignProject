@@ -5,9 +5,10 @@ using UnityEngine;
 public class Loop : MonoBehaviour
 {
     private Rigidbody _rb;
-    private float _speed;
+    [SerializeField] private float speed;
     private float _angularSpeed;
-    public Vector3 force;
+    public Vector3 Force { get; set; }
+
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
@@ -16,7 +17,6 @@ public class Loop : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        force = transform.eulerAngles += new Vector3(0 ,0, 1) * (Time.deltaTime * 100f);
-
+        Force = transform.eulerAngles += new Vector3(0 ,0, 1) * (Time.deltaTime * speed);
     }
 }

@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         {
             transform.SetParent(other.transform);
             _attached = true;
-            force = other.transform.GetComponent<Loop>().force;
+            force = other.transform.GetComponent<Loop>().Force;
         }
     }
 
