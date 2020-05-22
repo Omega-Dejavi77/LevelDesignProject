@@ -1,0 +1,44 @@
+16/04/2020: 2h
+Hemos hecho el grupo. Como aún no sabemos como se harán los grupos del proyecto III, hemos empeado directamente con el 2D,
+Hemos hecho braintorming compartiendo ideas por discord y con dibujos compartiendo pantalla y nos hemos puesto con el LGDD.
+He redactado la parte de 3C's y la M de mecánicas.
+
+27/04/2020: 4h
+Hemos empezado a crear las situaciones del juego 2D Javi y yo, mientras Guillem ideaba el 3D. Hemos tenido problemas para diferenciar
+las situaciones de los checkpoints, pues en nuestro juego 2D parecen fundirse. Sin embargo, creo que lo estamos haciendo medianamente
+bien. Guillem ha hecho un esbozo del 3D y hemos discutido un poco, pues a mi me parecía muy corto y poco inteligible.
+
+28/04/2020: 9h 
+Yo me he puesto a dibujar el nivel 2D con javi asesorandome y comentando, mientras el hacia alguna situacion más.
+Guillem y yo hemos discutido sobre el nivel, él creía que habiamos metido demasiadas mecánicas, en vez de hacer más dinámicas 
+con menos mecánicas. Además, tampoco cree que los puzzles sean adecuados. Javi y yo creemos que le dan un "break" al jugador.
+Hemos discutido el tema de la inercia y como se podría implementar para que el juego sea fluido además de algunas situaciones 
+conflictivas que se podrían dar. Las hemos resuelto y hemos seguido dibujando. He acabado el dibujo y ahora vamos a acabar el 
+LGDD, Javi está haciendo la explicación del walkthrough. 
+Le he comentado a Javi que el walkthrough estaba muy pobre, la verdad es que me ha sorprendido la poca calidad de su escrito
+(a pesar de sus dificultades con el inglés), hay que rehacer prácticamente todo el walkthrough.
+Hemos quitado un puzzle un poco largo( el que no le gustaba a guillem)
+ y lo hemos puesto como Checkpoint opcional para conseguir un colecccionable y hemos añadido una Bonus zone al final del jugador que premia al jugador por haber conseguido todos los coleccionables, 
+con 3 coleccionables más (basándonos en una referencia  de % de completo de Thimbleweed Park).
+He vuelto a comentar un par de cosas con Guillem y se ha puesto en modo "haced lo que queráis" al no habernos puesto de acuerdo.
+Parece que hoy estaba un poco irritable, pero 0 malos rollos, yo también soy muy cabezón.
+Guillem ha acabado toda la parte del juego 3D y ahora voy a acabar el walktrough mientras Javi empieza a maquetar el proyecto de Unity para la siguiente entrega.
+Ya he acabado el walktrough, nos hemos pasado un poco de extensión pero las imágenes son bastante grandes, creo que ha quedado muy bien, con un flow correcto y con momentos "eureka!"
+
+
+
+
+What went good (se me da mejor identificar lo malo)
+- Una vez quue teníamos las situaciones, montar los checkpoints ha sido relativamente fácil, aunque hemos tenido que perfeccionarlos después.
+- Nos hemos dividido el trabajo muy efectivamente
+- Nos hemos comunicado de forma sincera y sin enfadarnos ni tener malos rollos, a pesar de las discrepancias.
+
+What went wrong
+- Diferencias de implicación en la asignatura
+- Discrepancias sobre el temario/lo que se pedía en el enunciado
+- Discrepancias sobre la longitud del nivel (en tiempo)
+- Discrepancias sobre la profundidad del nivel ( número de mecánicas)
+En general, Guillem es una persona que se toma las entregas muy al pie de la letra de lo que pone en el enunciado y le cuesta ser flexible en el lenguaje.
+Por otra parte, a Javi le cuesta un poco más comprender el lenguaje y a veces hay malentendidos (no discusiones).
+Además, yo exigo mucho para que me cambien una idea (algunos lo llaman cabezonería, yo lo llamo firmeza) así que supongo que por eso hemos chocado un poquito. LLevamos 4 años conociéndonos pero el confinamiento
+nos pone a todos un poco más irritables.
