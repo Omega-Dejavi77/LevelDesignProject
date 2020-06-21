@@ -8,22 +8,35 @@ public class Platform : MonoBehaviour
     [SerializeField] private Transform leftPoint;
     [SerializeField] private Transform rightPoint;
     [SerializeField] private float speedFactor;
-    private float _direction = 1f;
-    
+
+    private Vector2 _targetPoint;
+
+    private void Start()
+    {
+        _targetPoint = leftPoint.position;
+    }
+
 
     void Update()
     {
-        if (Distance(leftPoint.position) < 0.2f || Distance(rightPoint.position) < 0.2f)
-            _direction *= -1;
+        if (Vector3.Distance(transform.position, leftPoint.position) <= 0.5f)
+        {
+            _targetPoint = rightPoint.position;
+        }
+
+        if (Vector3.Distance(transform.position, rightPoint.position) <= 0.5f)
+        {
+            _targetPoint = leftPoint.position;
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position, _targetPoint, Time.deltaTime * speedFactor);
     }
 
-    private void FixedUpdate()
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        transform.position += new Vector3(_direction , 0, 0) * (Time.deltaTime * speedFactor);
-    }
-
-    private float Distance(Vector3 position)
-    {
-        return Mathf.Abs(position.x - transform.position.x);
+        if (other.collider.CompareTag("Player"))
+        {
+            other.transform.SetParent(transform);
+        }
     }
 }

@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2301390161578066694}
   - component: {fileID: 5830519698804447622}
-  - component: {fileID: 5888455573460299430}
-  - component: {fileID: 5366180802769143266}
   m_Layer: 0
   m_Name: Stripes (4)
   m_TagString: Untagged
@@ -27,11 +25,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5846779390833732793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.031, y: 0, z: 0}
-  m_LocalScale: {x: 0.5625, y: 2, z: 1}
+  m_LocalPosition: {x: 0.0062, y: 0, z: 0}
+  m_LocalScale: {x: 0.112500004, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3840723086302635804}
-  m_RootOrder: 7
+  m_Father: {fileID: 3840723085808427453}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5830519698804447622
 SpriteRenderer:
@@ -83,47 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5888455573460299430
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5846779390833732793}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.32, y: 0.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
---- !u!114 &5366180802769143266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5846779390833732793}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2cd488581bde0b4bb3b5bea750b8c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftPoint: {fileID: 4016769220594540286}
-  rightPoint: {fileID: 4016769221642786746}
-  speedFactor: 3
 --- !u!1 &6076394960046570454
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,8 +91,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6448828932029146166}
   - component: {fileID: 5172849750891488853}
-  - component: {fileID: 2969572061558452554}
-  - component: {fileID: 8243103644008602432}
   m_Layer: 0
   m_Name: Stripes
   m_TagString: Untagged
@@ -151,11 +106,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6076394960046570454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.426, y: 0, z: 0}
-  m_LocalScale: {x: 0.5625, y: 2, z: 1}
+  m_LocalPosition: {x: -0.2852, y: 0, z: 0}
+  m_LocalScale: {x: 0.112500004, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3840723086302635804}
-  m_RootOrder: 3
+  m_Father: {fileID: 3840723085808427453}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5172849750891488853
 SpriteRenderer:
@@ -207,47 +162,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2969572061558452554
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6076394960046570454}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.32, y: 0.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
---- !u!114 &8243103644008602432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6076394960046570454}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2cd488581bde0b4bb3b5bea750b8c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftPoint: {fileID: 4016769220594540286}
-  rightPoint: {fileID: 4016769221642786746}
-  speedFactor: 3
 --- !u!1 &6755000833507735762
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,8 +172,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5820872097237990103}
   - component: {fileID: 3451519102851587024}
-  - component: {fileID: 2592731257312043325}
-  - component: {fileID: 7767558570843099375}
   m_Layer: 0
   m_Name: Stripes (1)
   m_TagString: Untagged
@@ -275,11 +187,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6755000833507735762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.681, y: 0, z: 0}
-  m_LocalScale: {x: 0.5625, y: 2, z: 1}
+  m_LocalPosition: {x: -0.1362, y: 0, z: 0}
+  m_LocalScale: {x: 0.112500004, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3840723086302635804}
-  m_RootOrder: 4
+  m_Father: {fileID: 3840723085808427453}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3451519102851587024
 SpriteRenderer:
@@ -331,47 +243,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2592731257312043325
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6755000833507735762}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.32, y: 0.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
---- !u!114 &7767558570843099375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6755000833507735762}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2cd488581bde0b4bb3b5bea750b8c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftPoint: {fileID: 4016769220594540286}
-  rightPoint: {fileID: 4016769221642786746}
-  speedFactor: 3
 --- !u!1 &8370599388541283236
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,8 +253,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1314812907886168820}
   - component: {fileID: 438473298068789641}
-  - component: {fileID: 6704881096320255082}
-  - component: {fileID: 8030574850252236593}
   m_Layer: 0
   m_Name: Stripes (2)
   m_TagString: Untagged
@@ -399,11 +268,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8370599388541283236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.706, y: 0, z: 0}
-  m_LocalScale: {x: 0.5625, y: 2, z: 1}
+  m_LocalPosition: {x: 0.14119999, y: 0, z: 0}
+  m_LocalScale: {x: 0.112500004, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3840723086302635804}
-  m_RootOrder: 5
+  m_Father: {fileID: 3840723085808427453}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &438473298068789641
 SpriteRenderer:
@@ -455,47 +324,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6704881096320255082
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8370599388541283236}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.32, y: 0.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
---- !u!114 &8030574850252236593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8370599388541283236}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2cd488581bde0b4bb3b5bea750b8c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftPoint: {fileID: 4016769220594540286}
-  rightPoint: {fileID: 4016769221642786746}
-  speedFactor: 3
 --- !u!1 &8812374766369218112
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,8 +334,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2841679978676034498}
   - component: {fileID: 6520375224173034537}
-  - component: {fileID: 1532844097963705844}
-  - component: {fileID: 4707622733877743576}
   m_Layer: 0
   m_Name: Stripes (3)
   m_TagString: Untagged
@@ -523,11 +349,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8812374766369218112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.429, y: 0, z: 0}
-  m_LocalScale: {x: 0.5625, y: 2, z: 1}
+  m_LocalPosition: {x: 0.2858, y: 0, z: 0}
+  m_LocalScale: {x: 0.112500004, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3840723086302635804}
-  m_RootOrder: 6
+  m_Father: {fileID: 3840723085808427453}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6520375224173034537
 SpriteRenderer:
@@ -579,47 +405,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1532844097963705844
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8812374766369218112}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.32, y: 0.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
---- !u!114 &4707622733877743576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8812374766369218112}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2cd488581bde0b4bb3b5bea750b8c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftPoint: {fileID: 4016769220594540286}
-  rightPoint: {fileID: 4016769221642786746}
-  speedFactor: 3
 --- !u!1001 &4016769222475960752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -627,6 +412,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 294393015, guid: b5502fad9f6607247b20b1c0e391e3dc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 294393015, guid: b5502fad9f6607247b20b1c0e391e3dc, type: 3}
+      propertyPath: speedFactor
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 212393894830356140, guid: b5502fad9f6607247b20b1c0e391e3dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -685,25 +478,23 @@ PrefabInstance:
     - target: {fileID: 212393894830356141, guid: b5502fad9f6607247b20b1c0e391e3dc,
         type: 3}
       propertyPath: m_Name
-      value: TimePlatform
+      value: TimePlatform_CP1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212393894830356141, guid: b5502fad9f6607247b20b1c0e391e3dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 212393895137783818, guid: b5502fad9f6607247b20b1c0e391e3dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5502fad9f6607247b20b1c0e391e3dc, type: 3}
---- !u!4 &3840723086302635804 stripped
+--- !u!4 &3840723085808427453 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 212393894830356140, guid: b5502fad9f6607247b20b1c0e391e3dc,
-    type: 3}
-  m_PrefabInstance: {fileID: 4016769222475960752}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4016769220594540286 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1881427790, guid: b5502fad9f6607247b20b1c0e391e3dc,
-    type: 3}
-  m_PrefabInstance: {fileID: 4016769222475960752}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4016769221642786746 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 853231114, guid: b5502fad9f6607247b20b1c0e391e3dc,
+  m_CorrespondingSourceObject: {fileID: 212393895137783821, guid: b5502fad9f6607247b20b1c0e391e3dc,
     type: 3}
   m_PrefabInstance: {fileID: 4016769222475960752}
   m_PrefabAsset: {fileID: 0}

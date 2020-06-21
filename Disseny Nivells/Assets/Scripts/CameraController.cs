@@ -6,10 +6,11 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private float speed;
-    private void FixedUpdate()
+    [SerializeField] private Transform player;
+    [SerializeField] private Vector3 offset;
+    
+    private void Update()
     {
-        var horizontal = Input.GetAxis("Horizontal");
-        var vertical = Input.GetAxis("Vertical");
-        transform.position += new Vector3(horizontal, vertical, 0) * (speed * Time.deltaTime);
+        transform.position = new Vector3(player.position.x, player.position.y  + offset.y, offset.z);
     }
 }
