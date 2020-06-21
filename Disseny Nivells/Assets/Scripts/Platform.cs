@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Platform : MonoBehaviour
@@ -17,7 +15,7 @@ public class Platform : MonoBehaviour
     }
 
 
-    void Update()
+    protected virtual void Update()
     {
         if (Vector3.Distance(transform.position, leftPoint.position) <= 0.5f)
         {
@@ -32,11 +30,19 @@ public class Platform : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, _targetPoint, Time.deltaTime * speedFactor);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    protected virtual void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.CompareTag("Player"))
         {
             other.transform.SetParent(transform);
+        }
+    }
+
+    protected virtual void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            other.transform.SetParent(null);
         }
     }
 }

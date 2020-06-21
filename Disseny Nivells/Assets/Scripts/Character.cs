@@ -8,7 +8,7 @@ public class Character : MonoBehaviour
     
     private Vector2 hitPoint;
     [SerializeField] private float speedFactor;
-    private Vector2 _direction;
+    private Vector3 _direction;
 
     private Vector2 _defaultGravity;
     public Vector2 ReSpawnPosition { get; set; }
@@ -67,24 +67,25 @@ public class Character : MonoBehaviour
             _rb.gravityScale = 1f;
             transform.SetParent(null);
             Physics2D.gravity = _defaultGravity;
+            _rb.velocity = Vector2.zero;
         }
 
         else if (_isHookThrown && Vector3.Distance(transform.position, hitPoint) > 1f)
         {
-            //transform.position = Vector3.Lerp(transform.position, hitPoint, Time.deltaTime * speedFactor);
-            transform.position += new Vector3(_direction.x, _direction.y) * (Time.deltaTime * speedFactor);
+            _rb.velocity = _direction * speedFactor;
         }
     }
 
     private Vector2 ThrowHook(Vector2 direction)
     {
-        //TODO: arreglar la gravedad, cuando se envia un gancho en el aire la gravedad no deberia afectar al jugador
         Physics2D.gravity = Vector2.zero;
         _isHookThrown = true;
+        _rb.velocity = new Vector2(_rb.velocity.x, 0f);
         var hit = Physics2D.Raycast(transform.position, direction, 500f);
         if (hit.collider.CompareTag("Platform"))
         {
             transform.SetParent(hit.transform);
+            _rb.velocity = Vector2.zero;
         }
         return hit.point;
     }

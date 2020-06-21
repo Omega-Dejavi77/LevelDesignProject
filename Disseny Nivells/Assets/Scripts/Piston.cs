@@ -38,6 +38,6 @@ public class Piston : MonoBehaviour
         }
         //transform.position += new Vector3(0 , _direction, 0) * (Time.deltaTime * speedFactor);
         pivotPoint.transform.localScale += new Vector3(0, _direction, 0) * (Time.deltaTime * speedFactor);
-        pike.localScale = new Vector2(3, 1);
+        pike.localScale = new Vector3(3, 1, 1);
     }
 }
