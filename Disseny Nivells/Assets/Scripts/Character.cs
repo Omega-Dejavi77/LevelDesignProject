@@ -11,7 +11,7 @@ public class Character : MonoBehaviour
     private Vector3 _direction;
 
     private Vector2 _defaultGravity;
-    public Vector2 ReSpawnPosition { get; set; }
+    public Vector3 ReSpawnPosition { get; set; }
 
     private int _coins;
     public int Coins
@@ -63,17 +63,11 @@ public class Character : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            _isHookThrown = false;
-            _rb.gravityScale = 1f;
-            transform.SetParent(null);
-            Physics2D.gravity = _defaultGravity;
-            _rb.velocity = Vector2.zero;
+           EnablePhysics();
         }
 
         else if (_isHookThrown && Vector3.Distance(transform.position, hitPoint) > 1f)
-        {
             _rb.velocity = _direction * speedFactor;
-        }
     }
 
     private Vector2 ThrowHook(Vector2 direction)
@@ -105,6 +99,16 @@ public class Character : MonoBehaviour
         _isHookThrown = false;
         _rb.gravityScale = 1f;
         transform.SetParent(null);
+        Physics2D.gravity = _defaultGravity;
+    }
+
+    public void EnablePhysics()
+    {
+        _isHookThrown = false;
+        _rb.gravityScale = 1f;
+        transform.SetParent(null);
+        _direction = Vector2.zero;
+        _rb.velocity = Vector2.zero;
         Physics2D.gravity = _defaultGravity;
     }
 }
